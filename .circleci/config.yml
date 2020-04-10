@@ -48,6 +48,7 @@
                 branches:
                   only: master
           - publish-latest:
+              context: docker-hub-context
               requires:
                 - build
               filters:
